@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Replay Fix for Microsoft Clarity",
+  "short_name": "Clarity Replay Fix",
+  "version": "1.1.0",
+  "description": "Unofficial fix: stops Microsoft Clarity recordings and heatmaps from freezing on large pages.",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://clarity.microsoft.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://clarity.microsoft.com/*"],
+      "js": ["patch.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_title": "Clarity Replay Fix: only works on clarity.microsoft.com",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
