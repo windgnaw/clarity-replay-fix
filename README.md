@@ -49,7 +49,13 @@ It wraps `window.getComputedStyle` on `clarity.microsoft.com` only. For elements
 
 Click the button on a Clarity tab to pause or resume the fix **for that tab only**. The tab reloads. The pause lasts until you resume it or close the tab; other tabs are not affected.
 
-## Install from source
+## Install
+
+Install from the Chrome Web Store: **[Replay Fix for Microsoft Clarity](https://chromewebstore.google.com/detail/replay-fix-for-microsoft/loohjllhpncmkhbagngilmbkbnennbdg)**
+
+To use it in Incognito, open the extension's **Details** and enable **Allow in Incognito**.
+
+### From source
 
 1. Download or clone this repository
 2. Open `chrome://extensions` and turn on **Developer mode**
