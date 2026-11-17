@@ -62,5 +62,6 @@ See [PRIVACY.md](PRIVACY.md). In short: no data is collected, stored remotely, o
 
 ## Notes
 
-- This is a temporary workaround. Once the replay renderer is fixed upstream, you can remove the extension.
+- This is a temporary workaround. Once the replay renderer is fixed upstream ([microsoft/clarity#1178](https://github.com/microsoft/clarity/issues/1178)), you can remove the extension.
 - If a replay ever looks wrong, pause the fix in that tab to compare, and please open an issue.
+
